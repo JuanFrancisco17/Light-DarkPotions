@@ -12,8 +12,9 @@ public class DropSlot : MonoBehaviour, IDropHandler
         if (!item)
         {
             item = DragHandler.itemDragging;
-            item.transform.SetParent(transform);
-            item.transform.position = transform.position;
+            item.transform.SetParent(DragHandler.startParent);
+            item.transform.position = DragHandler.startPosition;
+            Debug.Log(DragHandler.itemDragging.name);
         }
     }
 

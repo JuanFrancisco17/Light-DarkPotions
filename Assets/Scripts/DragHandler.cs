@@ -7,8 +7,8 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
 {
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
-    private Vector3 startPosition;
-    private Transform startParent;
+    public static Vector3 startPosition;
+    public static Transform startParent;
     private Transform dragParent;
     public static GameObject itemDragging;
     private CanvasGroup canvasGroup;
@@ -19,12 +19,12 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
         canvasGroup = GetComponent<CanvasGroup>();
 
         dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
+        startParent = GameObject.Find("ItemPoolBackground").transform;
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
         itemDragging = gameObject;
         startPosition = transform.position;
-        startParent = transform.parent.root;
         transform.SetParent(dragParent);
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
