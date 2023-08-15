@@ -15,6 +15,16 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item.transform.SetParent(DragHandler.startParent);
             item.transform.position = DragHandler.startPosition;
             Debug.Log(DragHandler.itemDragging.name);
+
+            switch (DragHandler.itemDragging.name)
+            {
+                case "GloomSymbol":
+                    SymbolFunction.instance.Gloom();
+                    break;
+                case "GleeSymbol":
+                    SymbolFunction.instance.Glee();
+                    break;
+            }
         }
     }
 

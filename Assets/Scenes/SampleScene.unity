@@ -445,6 +445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 397384244}
+  - component: {fileID: 397384245}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -467,6 +468,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397384245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397384243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c06b4f660131674d98d6be74bb7ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,7 +688,7 @@ GameObject:
   - component: {fileID: 615412081}
   - component: {fileID: 615412078}
   m_Layer: 5
-  m_Name: Item1
+  m_Name: GloomSymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,7 +900,7 @@ GameObject:
   - component: {fileID: 964376491}
   - component: {fileID: 964376488}
   m_Layer: 5
-  m_Name: Item2
+  m_Name: GleeSymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1258,8 +1271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxValue: 100
   values:
-  - 10
-  - 10
+  - 0
+  - 0
   valueBars:
   - {fileID: 657724977}
   - {fileID: 995261646}
