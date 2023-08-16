@@ -48,6 +48,26 @@ public class DropSlot : MonoBehaviour, IDropHandler
                     triesManager.SubstractTries();
                     SymbolFunction.instance.Mirror();
                     break;
+                case "NostalgiaSymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Nostalgia();
+                    break;
+                case "AnxiousSymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Anxious();
+                    break;
+                case "TranquilSymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Tranquil();
+                    break;
+                case "AstraySymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Astray();
+                    break;
+                case "RecoupSymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Recoup();
+                    break;
             }
         }
     }
