@@ -44,10 +44,10 @@ public class DropSlot : MonoBehaviour, IDropHandler
                     triesManager.SubstractTries();
                     SymbolFunction.instance.Grateful();
                     break;
-                case "MirrorSymbol":
-                    triesManager.SubstractTries();
-                    SymbolFunction.instance.Mirror();
-                    break;
+                //case "MirrorSymbol":
+                //    triesManager.SubstractTries();
+                //    SymbolFunction.instance.Mirror();
+                //    break;
                 case "NostalgiaSymbol":
                     triesManager.SubstractTries();
                     SymbolFunction.instance.Nostalgia();
@@ -67,6 +67,10 @@ public class DropSlot : MonoBehaviour, IDropHandler
                 case "RecoupSymbol":
                     triesManager.SubstractTries();
                     SymbolFunction.instance.Recoup();
+                    break;
+                case "EnvySymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Envy();
                     break;
             }
         }

@@ -101,17 +101,17 @@ public class SymbolFunction : MonoBehaviour
         }
     }
 
-    public void Mirror()
-    {
-        previousDark = true;
-        BarController.instance.values[0] += BarController.instance.values[1];
+    //public void Mirror()
+    //{
+    //    previousDark = true;
+    //    BarController.instance.values[0] += BarController.instance.values[1];
 
-        float diference = BarController.instance.values[0] + BarController.instance.values[1];
-        if (diference > 100)
-        {
-            BarController.instance.values[1] -= (diference - 100);
-        }
-    }
+    //    float diference = BarController.instance.values[0] + BarController.instance.values[1];
+    //    if (diference > 100)
+    //    {
+    //        BarController.instance.values[1] -= (diference - 100);
+    //    }
+    //}
 
     public void Nostalgia()
     {
@@ -187,13 +187,14 @@ public class SymbolFunction : MonoBehaviour
 
     public void Envy()
     {
-        previousDark = false;
-        BarController.instance.values[1] -= 10;
+        previousDark = true;
+        BarController.instance.values[0] += BarController.instance.values[1];
+        //BarController.instance.values[1] -= BarController.instance.values[1];
 
         float diference = BarController.instance.values[0] + BarController.instance.values[1];
         if (diference > 100)
         {
-            BarController.instance.values[0] -= (diference - 100);
+            BarController.instance.values[1] -= (diference - 100);
         }
     }
 }
