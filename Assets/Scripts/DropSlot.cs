@@ -5,7 +5,13 @@ using UnityEngine.EventSystems;
 
 public class DropSlot : MonoBehaviour, IDropHandler
 {
-    public GameObject item;
+    private GameObject item;
+    private TriesManager triesManager;
+
+    private void Start()
+    {
+        triesManager = GameObject.Find("GameManager").GetComponent<TriesManager>();   
+    }
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -14,15 +20,33 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item = DragHandler.itemDragging;
             item.transform.SetParent(DragHandler.startParent);
             item.transform.position = DragHandler.startPosition;
-            Debug.Log(DragHandler.itemDragging.name);
+            //Destroy(item.gameObject);
 
             switch (DragHandler.itemDragging.name)
             {
                 case "GloomSymbol":
+                    triesManager.SubstractTries();
                     SymbolFunction.instance.Gloom();
                     break;
                 case "GleeSymbol":
+                    triesManager.SubstractTries();
                     SymbolFunction.instance.Glee();
+                    break;
+                case "TearfulSymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Tearful();
+                    break;
+                case "AngrySymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Angry();
+                    break;
+                case "GratefulSymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Grateful();
+                    break;
+                case "MirrorSymbol":
+                    triesManager.SubstractTries();
+                    SymbolFunction.instance.Mirror();
                     break;
             }
         }
