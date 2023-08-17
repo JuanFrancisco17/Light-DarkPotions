@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BarController : MonoBehaviour
 {
     public static BarController instance;
+
     [SerializeField] float maxValue;
     public float[] values;
     [SerializeField] RectTransform[] valueBars;
