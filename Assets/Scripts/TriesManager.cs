@@ -10,11 +10,13 @@ public class TriesManager : MonoBehaviour
     [SerializeField] float winDark;
     [SerializeField] float winLight;
     public bool isWin = false;
-    [SerializeField] GameObject panel;
+    [SerializeField] GameObject winPanel;
+    [SerializeField] GameObject losePanel;
 
     private void Start()
     {
-        panel.SetActive(false); 
+        winPanel.SetActive(false); //Sets Win Panel To False
+        losePanel.SetActive(false); //Sets Lose Panel To Flase
     }
 
     void Update()
@@ -26,11 +28,13 @@ public class TriesManager : MonoBehaviour
 
         if (tries == 0 && isWin)
         {
-            panel.SetActive(true);
+            Debug.Log("You have won"); //Debugging...
+            winPanel.SetActive(true); //We Have Won!
         }
         else if (tries == 0 && isWin == false)
         {
-            Debug.Log("You have lost");
+            Debug.Log("You have lost"); //Debugging...
+            losePanel.SetActive(true); //We Have Lost!
         }
     }
 
