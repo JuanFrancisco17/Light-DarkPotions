@@ -36,6 +36,12 @@ public class TriesManager : MonoBehaviour
             Debug.Log("You have lost"); //Debugging...
             losePanel.SetActive(true); //We Have Lost!
         }
+
+        if(isWin == true)
+        {
+            Debug.Log("You have won"); //Debugging...
+            winPanel.SetActive(true); //We Have Won!
+        }
     }
 
     public void SubstractTries()

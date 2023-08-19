@@ -350,6 +350,7 @@ RectTransform:
   - {fileID: 462725787}
   - {fileID: 1264061608}
   - {fileID: 465202340}
+  - {fileID: 1778427870}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -702,6 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d2c58f8fca29442b7a29608a189c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  introScreen: {fileID: 0}
 --- !u!1 &426827208
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +796,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestLevel
+          m_StringArgument: Level6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &426827211
@@ -927,7 +929,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestLevel
+          m_StringArgument: Level6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &462725789
@@ -2404,7 +2406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1264061608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2466,6 +2468,130 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264061607}
   m_CullTransparentMesh: 1
+--- !u!1001 &1470701600
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 25906642}
+    m_Modifications:
+    - target: {fileID: 1176924919920542803, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -41.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731017083456842582, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_Name
+      value: IntroScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731017083456842582, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482562951360625976, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_text
+      value: "Lexi\u2019s Competition"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982050813920447429, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_text
+      value: Lexi was hit by a wave of NOSTALGIA that made her TEARFUL. She remembered
+        the ENVY she felt when she positioned 2nd place in the last lifting competition;
+        and the GLEE on her opponent's face who took first place. She hopes this
+        time, she can take first place!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982050813920447429, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_fontSize
+      value: 3.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982050813920447429, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 3.39
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
 --- !u!1 &1550347792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2996,11 @@ RectTransform:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1590589333599657108, guid: 49f3be8fd07f6ee42abbe7e4934e0658, type: 3}
   m_PrefabInstance: {fileID: 6185779752003963283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1778427870 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+  m_PrefabInstance: {fileID: 1470701600}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1980859540
 GameObject:
