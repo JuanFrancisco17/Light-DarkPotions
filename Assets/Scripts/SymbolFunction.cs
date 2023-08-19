@@ -101,17 +101,17 @@ public class SymbolFunction : MonoBehaviour
         }
     }
 
-    //public void Mirror()
-    //{
-    //    previousDark = true;
-    //    BarController.instance.values[0] += BarController.instance.values[1];
+    public void Temperance()
+    {
+        previousDark = true;
+        BarController.instance.values[0] += BarController.instance.values[1];
 
-    //    float diference = BarController.instance.values[0] + BarController.instance.values[1];
-    //    if (diference > 100)
-    //    {
-    //        BarController.instance.values[1] -= (diference - 100);
-    //    }
-    //}
+        float diference = BarController.instance.values[0] + BarController.instance.values[1];
+        if (diference > 100)
+        {
+            BarController.instance.values[1] -= (diference - 100);
+        }
+    }
 
     public void Nostalgia()
     {
