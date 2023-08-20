@@ -189,7 +189,7 @@ public class SymbolFunction : MonoBehaviour
     {
         previousDark = true;
         BarController.instance.values[0] += BarController.instance.values[1];
-        //BarController.instance.values[1] -= BarController.instance.values[1];
+        BarController.instance.values[1] -= BarController.instance.values[1];
 
         float diference = BarController.instance.values[0] + BarController.instance.values[1];
         if (diference > 100)
