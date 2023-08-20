@@ -1174,6 +1174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IntroScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 5731017083456842582, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8310231460394678969, guid: fbfc606ecba116e4eb316f813e87269b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2122,7 +2126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 564, y: 291}
+  m_AnchoredPosition: {x: 564, y: 266}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1161923067 stripped
@@ -4421,7 +4425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3083768440195176956, guid: 9d1b50bdeb245bc4ca71f52a0857f51c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -24.99999
       objectReference: {fileID: 0}
     - target: {fileID: 3083768440195176956, guid: 9d1b50bdeb245bc4ca71f52a0857f51c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
