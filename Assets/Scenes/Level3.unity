@@ -4411,6 +4411,14 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.8862745
       objectReference: {fileID: 0}
+    - target: {fileID: 9002638675537214800, guid: 9d1b50bdeb245bc4ca71f52a0857f51c, type: 3}
+      propertyPath: values.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002638675537214800, guid: 9d1b50bdeb245bc4ca71f52a0857f51c, type: 3}
+      propertyPath: values.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9136299244877716294, guid: 9d1b50bdeb245bc4ca71f52a0857f51c, type: 3}
       propertyPath: m_Name
       value: Bar

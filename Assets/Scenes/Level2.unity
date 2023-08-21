@@ -687,8 +687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tries: 7
   text: {fileID: 1121940672}
-  winDark: 50
-  winLight: 50
+  winDark: 10
+  winLight: 90
   isWin: 0
   winPanel: {fileID: 1264061607}
   losePanel: {fileID: 465202339}
@@ -4236,7 +4236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4244,15 +4244,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4284,11 +4284,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 291.86
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -87.18
       objectReference: {fileID: 0}
     - target: {fileID: 3874192821902716691, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4312,7 +4312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6027090845404862562, guid: 7d02009772d73b443809792d60b7d61c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

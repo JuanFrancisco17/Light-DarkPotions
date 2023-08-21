@@ -21,6 +21,11 @@ public class TriesManager : MonoBehaviour
 
     void Update()
     {
+        if(BarController.instance.values[0] == winDark && BarController.instance.values[1] == winLight)
+        {
+            Debug.Log("You have won edited"); //Debugging...
+            isWin = true;
+        }
         if (tries == 0 && BarController.instance.values[0] == winDark && BarController.instance.values[1] == winLight)
         {
             isWin = true;
@@ -39,7 +44,7 @@ public class TriesManager : MonoBehaviour
 
         if(isWin == true)
         {
-            Debug.Log("You have won"); //Debugging...
+            
             winPanel.SetActive(true); //We Have Won!
         }
     }
